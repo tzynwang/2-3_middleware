@@ -5,6 +5,7 @@
   - 輸出至終端
   - 顯示在瀏覽器中
   - 寫入requestLogs資料夾中的requestLogs.txt檔案中
+- 可下載純文字格式的請求紀錄檔案
 
 ## 環境需求
 - [git](https://git-scm.com/downloads)
