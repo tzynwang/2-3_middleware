@@ -40,6 +40,15 @@ app.post('/', (req, res) => {
   res.render('index', { message: '對 endpoint / 發出POST request', logs })
 })
 
+app.post('/download', (req, res) => {
+  const file = './requestLogs/requestLogs.txt'
+  const timeStart = new Date()
+  const date = timeStart.toISOString().slice(0, 10)
+  const time = timeStart.toLocaleTimeString('en-US', { timeStyle: 'medium', hour12: false }).split(':').join('') // HH:MM:SS to HHMMSS
+  const fileName = `log_${date}_${time}.txt`
+  res.download(file, fileName)
+})
+
 app.listen(port, () => {
   console.log(`App is running on http://localhost:${port}`)
 })

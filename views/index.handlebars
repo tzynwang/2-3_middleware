@@ -18,6 +18,9 @@
   <!-- result log -->
   <div class="row flex-column">
     <h2>Logs:</h2>
+    <form action="/download" method="POST" class="mb-3">
+      <button class="btn btn-success">Download log file</button>
+    </form>
     {{#each logs}}
     <p>{{this.date}} {{this.time}} | {{this.method}} from {{this.url}}</p>
     {{/each}}
