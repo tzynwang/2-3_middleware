@@ -14,8 +14,8 @@
 
 ## 開啟流程
 請開啟終端機依序進行以下操作：
-1. `git clone https://github.com/tzynwang/2-3_middleware.git`
-1. `cd 2-3_middleware`
+1. `git clone https://github.com/tzynwang/ac_assignment_2-3_middleware.git`
+1. `cd ac_assignment_2-3_middleware`
 1. `npm install`
 1. `npm run dev`
 1. 使用瀏覽器開啟：`http://localhost:3000` 即可瀏覽本專案
