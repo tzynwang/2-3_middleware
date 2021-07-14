@@ -8,7 +8,7 @@ app.engine('handlebars', expressHandlebars())
 app.set('view engine', 'handlebars')
 
 // middle for logging requests on terminal
-const logRequest = require('./scripts/logRequest')
+const logRequest = require('./tools/logRequest')
 app.use(logRequest)
 
 const logs = []
